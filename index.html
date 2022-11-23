@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=13">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <!-- <link rel="stylesheet" href="asset\style.css" type="text/css"> -->
+        <title>GIT</title>
+    </head>
+    <body>
+        <h1>Exemples d'utilisation de GIT</h1>
+        <h2>Création d'un projet GIT depuis le poste de travail</h2>
+        <div class="StyleList">
+            <ol>
+                <li>Se placer dans le dossier de travail</li>
+                <li>git init</li>
+                <li>Créer un README.md <span class="StyleText">(pour avoir du contenu)</span></li>
+                <li>Faire un commit <span class="StyleText">(commit initial)</span><br>
+                    On passe sur <a href="https://github.com" target="_blank">
+                    <button>GitHub.com</button></a></li>
+                <li>Créer un dépôt git sur GitHub<br>On repasse sur le terminal</li>
+                <li>git remote add origin URL_DU_DEPOT_DISTANT <span class="StyleText">(pour relier les deux)
+                </span></li>
+                <li>git branch -M main</li>
+                <li>git push -u origin main</li>
+            </ol>
+        </div>
+        <p class="StyleParagraph">Désormais votre dépôt git local, est relié à votre dépôt git distant</p>
+        <h2>Création d'un projet GIT depuis GitHUB</h2>
+        <div class="StyleList">
+            <ol>
+                <li>Aller sur <a href="https://github.com" target="_blank"><button>GitHub.com</button></a></li>
+                <li>Créer un nouveau dépôt, en cochant la case pour avoir un README.md</li>
+                <li>Aller sur la page d'accueil du projet</li>
+                <li>Récupérer le lien du dépôt en cliquant sur le bouton <button>Code &#9660;</button></li>
+                <li>Se placer dans le dossier qui contiendra le dossier de travail</li>
+                <li>git clone URL_DU_DEPOT_DISTANT</li>
+            </ol>
+        </div>
+        <p>Le dossier du projet a été créé, il contient la version actuelle du dépôt GitHub du dépôt GitHub (c'est un clone)</p>
+        <h2>Faire un commit</h2>
+        <ol>
+            <li>git.add (ajoute tous les fichiers du dossier contenant des modifications au prochain commit</li>
+            <li>git commit -m "message" (créé une sauvegarde comprenant le contenu des anciens commits + les changements ajoutés avec la commande add</li>
+        </ol>  
+        <h2>Créer une branche</h2>
+        <p>On peut créer une branche en utilisant les commandes :</p>      
+        <ul>
+            <li>git branch NOM_DE_LA_BRANCHE</li>
+            <li>git checkout -b NOM_DE_LA_BRANCHE</li>
+        </ul>
+        <p>Vous pouvez changer de branche en utilisant git checkout NOM_DE_LA_BRANCHE<br>
+        Attention, on ne peut pas dréer de branche dans un dépôt GIT vide (CAD qui contient aucun commit)</p>   
+        <h2>Récupérer | Envoyer des données avec le dépôt distant</h2>
+        <p>On peut mettre à jour le dépôt local par rapport au dépôt distant avec la commande : git pull.<br>
+        On peut mettre à jour le dépôt distant avec la commande : git push.</p> 
+        <div>Ces commandes synchronisent les commit, si des fichiers locaux ne font pas partie d'aucun commit, ils ne seront pas envoyés dans le dépôt distant.</div><br>
+
+        <!-- Contact:
+            <form>
+            <ul>
+                <li>Prénom : <input type="text" id="Prenom"></li>
+                <li>NOM : <input type="text" id="nom"></li>
+                <li>Date de Naissance : <input type="date" id="date">
+                </li>
+                <li>Taille (en m): <input type="number" id="Taille">
+                </li>
+                <li>Masse (en kg): <input type="number" id="Masse">
+                </li>
+            </ul>
+        </form>
+        <script language="javascript" type="text/javascript">
+            var Prenom="";
+            var Nom="";
+            var Taille;
+            var Masse;
+
+            document.write("<form><ul><li>Prénom : <input type=\"text\" id=\"Prenom\">" + Prenom + "</li>"); 
+
+            document.write("<li>Nom : <input type=\"text\" id=\"Nom\">" + Nom + "</li>"); 
+
+            document.write("<li>Taille en cm : <input type=\"number\" id=\"Taille\">" + Taille + "</li>"); 
+
+            document.write("<li>Masse en kg : <input type=\"number\" id=\"Masse\">" + Masse + "</li>"); 
+
+            // var Prenom=Document.GetElementbyID('Prenom');
+            // var taille=Document.GetElementbyID('Taille');
+            // var masse=Document.GetElementbyID('Masse');
+            var IMC=10000*masse/(taille*taille);
+            document.print(Prenom);
+        </script> -->
+    </body>
+</html>

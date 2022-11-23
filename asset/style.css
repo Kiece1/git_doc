@@ -1,0 +1,33 @@
+/* *{
+    margin:0px;
+    padding:0px;
+} */
+
+body{
+    background: rgb(255, 255, 255);
+}
+
+button{
+    border:1px red solid;
+}
+
+ol{
+
+    align-items: center;
+    /* display:flex; */
+    box-sizing: border-box;
+    /* flex-direction: row; */
+}
+
+.StyleList{
+    border: 2px blue;
+}
+
+.StyleText{
+    /* display: flex; */
+    font-style:italic;
+}
+
+.StyleParagraph{
+    color:green;
+}
